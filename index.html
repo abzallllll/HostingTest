@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML и CSS </title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="box"> <h1 class="a">Уроки по HTML и CSS </h1></div>
+    
+    <div class="box">
+        <p class="a"> Основываясь на HTML, веб-страницы приобретают структуру, состоящую из различных элементов, таких как заголовки, абзацы, изображения, ссылки и многое другое.</p>
+        <h2 class="b">все теги абзацы и многое другое тут:</h2>
+    </div>
+
+    <hr>
+    <div class="megabox">
+    
+    <div class="box1"> 
+        <h3 class="b"> Основная структура HTML документа</h3>
+        <p>  это тело и мозг сайта: </p>
+        <img class="c" src="img/img1.png" alt="">
+        <p>что бы сделать:
+            'shift + 1' потом выходит помощь снизу текста нажимаем на первую
+        </p>
+    </div>
+    
+    
+    <div class="box1">
+        <h3 class="b">Основные элементы HTML</h3>
+        <p>Заголовки:</p>
+        <img class="c" src="img/img2.png" alt="">
+        <p>Заголовки могут быть от < h1 > до < h6 > (чем больше номер, тем меньше размер).</p>
+    </div>
+    </div>
+    <hr>
+    <div class="code-block">
+        <pre>
+          <code class="language-html">
+            < p >ipsum dolor< /p >
+          </code>
+        </pre>
+        <button class="copy-button" onclick="copyCode(this)">Копировать код</button>
+      </div>
+      <h2 class="q">p пишем обычный текст:</h2>
+      <p class="q">вот так</p>
+      
+    
+      
+       <script>
+        function copyCode(button) {
+          const codeElement = button.previousElementSibling.querySelector('code');
+          const codeText = codeElement.textContent;
+    
+          navigator.clipboard.writeText(codeText).then(() => {
+            button.textContent = 'Скопировано!';
+            setTimeout(() => button.textContent = 'Копировать код', 2000);
+          }).catch(err => {
+            console.error('Ошибка копирования:', err);
+          });
+        }
+    
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       
+      </script>
+      <hr class="n">
+
+      <div class="code-block">
+            <pre>
+              <code class="language-html">
+                < b >ipsum dolor< /b >  
+              </code>
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Копировать код</button>
+          </div>
+          <h2 class="q">b значит жирный текст:</h2>
+          <p class="q"><b>вот так</b></p>
+          
+         <script>
+            function copyCode(button) {
+              const codeElement = button.previousElementSibling.querySelector('code');
+              const codeText = codeElement.textContent;
+        
+              navigator.clipboard.writeText(codeText).then(() => {
+                button.textContent = 'Скопировано!';
+                setTimeout(() => button.textContent = 'Копировать код', 2000);
+              }).catch(err => {
+                console.error('Ошибка копирования:', err);
+              });
+            }
+        
+           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+           
+          </script>
+    <hr class="n">
+
+    <div class="code-block">
+      <pre>
+        <code class="language-html">
+          < i >Lorem, ipsum.< /i >
+        </code>
+      </pre>
+      <button class="copy-button" onclick="copyCode(this)">Копировать код</button>
+    </div>
+    <h2 class="q">italic кривой текст</h2>
+    <p class="q"> <i>вот так</i></p>
+    <script>
+      function copyCode(button) {
+        const codeElement = button.previousElementSibling.querySelector('code');
+        const codeText = codeElement.textContent;
+    
+        navigator.clipboard.writeText(codeText).then(() => {
+          button.textContent = 'Скопировано!';
+          setTimeout(() => button.textContent = 'Копировать код', 2000);
+        }).catch(err => {
+          console.error('Ошибка копирования:', err);
+        });
+      }
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    </script>
+
+    <hr class="n">
+
+    <div class="code-block">
+        <pre>
+          <code class="language-html">
+            < u > ipsum dolor.< /u >
+          </code>
+        </pre>
+        <button class="copy-button" onclick="copyCode(this)">Копировать код</button>
+      </div>
+      <h2 class="q">u создает текст с подчеркиванием:</h2>
+      <p class="q"><u>вот так</u></p>
+    
+      
+       <script>
+        function copyCode(button) {
+          const codeElement = button.previousElementSibling.querySelector('code');
+          const codeText = codeElement.textContent;
+    
+          navigator.clipboard.writeText(codeText).then(() => {
+            button.textContent = 'Скопировано!';
+            setTimeout(() => button.textContent = 'Копировать код', 2000);
+          }).catch(err => {
+            console.error('Ошибка копирования:', err);
+          });
+        }
+    
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       
+      </script>
+    <hr class="n">
+
+    <div class="code-block">
+        <pre>
+          <code class="language-html">
+            < hr >
+          </code>
+        </pre>
+        <button class="copy-button" onclick="copyCode(this)">Копировать код</button>
+      </div>
+    <h2 class="q">создает линию:</h2>
+      
+       <script>
+        function copyCode(button) {
+          const codeElement = button.previousElementSibling.querySelector('code');
+          const codeText = codeElement.textContent;
+    
+          navigator.clipboard.writeText(codeText).then(() => {
+            button.textContent = 'Скопировано!';
+            setTimeout(() => button.textContent = 'Копировать код', 2000);
+          }).catch(err => {
+            console.error('Ошибка копирования:', err);
+          });
+        }
+    
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       
+      </script>
+      <hr class="n">
+
+      <div class="code-block">
+        <pre>
+          <code class="language-html">
+            < mark >ipsum dolor.< /mark >
+          </code>
+        </pre>
+        <button class="copy-button" onclick="copyCode(this)">Копировать код</button>
+      </div>
+      <h2 class="q">обводит текст маркером:</h2> 
+      <p class="q"> <mark>вот так</mark></p>
+    
+      
+       <script>
+        function copyCode(button) {
+          const codeElement = button.previousElementSibling.querySelector('code');
+          const codeText = codeElement.textContent;
+    
+          navigator.clipboard.writeText(codeText).then(() => {
+            button.textContent = 'Скопировано!';
+            setTimeout(() => button.textContent = 'Копировать код', 2000);
+          }).catch(err => {
+            console.error('Ошибка копирования:', err);
+          });
+        }
+    
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       
+      </script>
+      <hr class="n">
+
+      <div class="code-block">
+        <pre>
+          <code class="language-html">
+            < a href="https://t.me/Aaaaavhs">мой тгк< /a >
+          </code>
+        </pre>
+        <button class="copy-button" onclick="copyCode(this)">Копировать код</button>
+      </div>
+      <h2 class="q">тэг a - создает ссылку, внутри href мы вставляем ссылку</h2>
+      <a class="r" href="https://t.me/Aaaaavhs">мой тгк</a>
+      <script>
+        function copyCode(button) {
+          const codeElement = button.previousElementSibling.querySelector('code');
+          const codeText = codeElement.textContent;
+      
+          navigator.clipboard.writeText(codeText).then(() => {
+            button.textContent = 'Скопировано!';
+            setTimeout(() => button.textContent = 'Копировать код', 2000);
+          }).catch(err => {
+            console.error('Ошибка копирования:', err);
+          });
+        }
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+      </script>
+
+      <hr class="n">
+
+
+      <div class="megabox">
+        <div class="box2">
+          <h2 class="k">мы прошли первый урок по HTML</h2>
+          <p class="k">это маленькое задание которую нужно сделеть:</p>
+        </div>
+       
+        <div class="card">
+          <h2>Материалы, необходимые для выполнения задачи</h2>
+          
+          <a href="#modal">
+            <img src="preview-image.png" alt="Preview">
+          </a>
+          <br>
+          <a href="file.pdf" download>
+            <button>Ochiq ko'rish</button>
+          </a>
+        </div>
+  
+        <div id="modal" class="modal">
+          <a href="#" class="close-btn">✖ Закрыть</a>
+          <img src="img/img5.png" alt="Full Image">
+        </div>
+
+
+
+</body>
+</html>
+
+
+
